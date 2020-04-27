@@ -207,6 +207,7 @@ class BlazeFace(nn.Module):
         # 1. Preprocess the images into tensors:
         x = x.to(self._device())
         x = self._preprocess(x)
+        print(x.shape)
 
         # 2. Run the neural network:
         with torch.no_grad():
